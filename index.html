@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Nouveau utilisateur</title>
+</head>
+
+<body onload="afficheListe()">
+    <!-- TODO -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <main>
+        <form id="newCollaborateur">
+            <div class="justify-content-center align-items-center container pl-md-5 mb-5">
+                <div class="mt-sm-4 mb-3">
+                    <h2>Nouveau utilisateur</h2>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-3 col-md-2 offset-md-1">
+                        <label for="nom" class="col-form-label">Nom</label>
+                    </div>
+                    <div class="col-7 col-sm-5">
+                        <input type="text" class="form-control" id="nom" value="" required>
+                    </div>
+                </div>
+                <div class="form-row pt-2">
+                    <div class="col-3 col-md-2 offset-md-1">
+                        <label for="password" class="col-form-label">Mot de passe</label>
+                    </div>
+                    <div class="col-7 col-sm-5">
+                        <input type="password" class="form-control" id="password" value="" required>
+                    </div>
+                </div>
+                <div class="form-row pt-2">
+                    <div class="col-1">
+                        <button type="button" class="btn btn-success" id="ajout" onclick="ajouter()">Ajouter</button>
+                    </div>
+                </div>
+                <div class="mt-sm-4 mb-3">
+                    <h2>Liste utilisateurs</h2>
+                </div>
+                <div class="form-row pt-2">
+                    <div class="col-1">
+                        <button type="button" class="btn btn-primary" id="refresh"
+                            onclick="afficheListe()">Rafraichir</button>
+                    </div>
+                </div>
+
+                <div class="row bg-secondary text-white rounded mt-3 ml-0">
+                    <div class="col-1">Id</div>
+                    <div class="col-6">Nom</div>
+                    <div class="col-5">Mot de passe</div>
+                </div>
+                <div id="liste_utilisateur">
+
+                </div>
+
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
