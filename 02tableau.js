@@ -27,7 +27,6 @@ var villesSansTiretSansEspace = villes.filter(function(element){
 });
 console.log("villesSansTiretSansEspace = "+villesSansTiretSansEspace);
 
-
 //chainer les fonctions : filtrer les villes se terminant par s et les mettre en majuscule 
 var villesMajusculeSeTerminantParS = villes.filter(function(element){
     return element.lastIndexOf("s");
